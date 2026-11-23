@@ -1,0 +1,1151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unattend xmlns="urn:schemas-microsoft-com:unattend" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
+	<!--https://schneegans.de/windows/unattend-generator/?LanguageMode=Unattended&UILanguage=en-US&Locale=en-US&Keyboard=00000409&UseKeyboard2=true&Locale2=mk-MK&Keyboard2=0000042f&GeoLocation=19618&PEMode=Generated&Disable8Dot3Names=true&DisableDefender=true&PauseBeforeFormatting=true&InstallFromMode=Edition&InstallFromEdition=pro&PartitionMode=Custom&DiskpartScript=SELECT+DISK%3D0%0D%0ACLEAN%0D%0ACONVERT+GPT%0D%0ACREATE+PARTITION+EFI+SIZE%3D200%0D%0AFORMAT+QUICK+FS%3DFAT32+LABEL%3D%22EFI%22%0D%0AASSIGN+LETTER%3DS%0D%0ACREATE+PARTITION+MSR+SIZE%3D16%0D%0ACREATE+PARTITION+PRIMARY+SIZE%3D81925%0D%0AFORMAT+QUICK+FS%3DNTFS+LABEL%3D%22System%22%0D%0AASSIGN+LETTER%3DW%0D%0ALIST+PARTITION%0D%0ALIST+VOLUME%0D%0AEXIT&PagingFileMode=Custom&InitPagingFileSize=8192&MaxPagingFileSize=8192&ProcessorArchitecture=amd64&BypassNetworkCheck=true&ComputerNameMode=Random&TimeZoneMode=Explicit&TimeZone=Central+European+Standard+Time&UserAccountMode=Unattended&AccountName0=Admin&AccountDisplayName0=&AccountPassword0=&AccountGroup0=Administrators&AutoLogonMode=Own&PasswordExpirationMode=Unlimited&LockoutMode=Default&HideFiles=HiddenSystem&ShowFileExtensions=true&LaunchToThisPC=true&ShowEndTask=true&TaskbarSearch=Icon&TaskbarIconsMode=Default&DisableWidgets=true&LeftTaskbar=true&DisableBingResults=true&StartTilesMode=Default&StartPinsMode=Default&DisableUac=true&DisableSac=true&DisableSmartScreen=true&DisableFastStartup=true&DisableSystemRestore=true&EnableLongPaths=true&DisableLastAccess=true&DisableAppSuggestions=true&DisablePointerPrecision=true&DisableWpbt=true&PreventDeviceApps=true&EffectsMode=Default&DesktopIconsMode=Custom&IconControlPanel=true&IconNetwork=true&IconRecycleBin=true&IconThisPC=true&StartFoldersMode=Custom&StartFolderSettings=true&CoreIsolationMode=Disabled&WifiMode=Interactive&ExpressSettings=DisableAll&LockKeysMode=Skip&StickyKeysMode=Disabled&ColorMode=Default&WallpaperMode=Default&LockScreenMode=Default&RemoveOneDrive=true&SystemScript0=Windows+Registry+Editor+Version+5.00%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CExplorer%5D%0D%0A%22NoDriveAutoRun%22%3Ddword%3A03ffffff%0D%0A%22NoDriveTypeAutoRun%22%3Ddword%3A000000ff%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CSystem%5D%0D%0A%22ConsentPromptBehaviorAdmin%22%3Ddword%3A00000000%0D%0A%22EnableInstallerDetection%22%3Ddword%3A00000000%0D%0A%22EnableSecureUIAPaths%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5COneDrive%5D%0D%0A%22DisableFileSyncNGSC%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CDeliveryOptimization%5D%0D%0A%22DODownloadMode%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CCloudContent%5D%0D%0A%22DisableCloudOptimizedContent%22%3Ddword%3A00000001%0D%0A%22DisableSoftLanding%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSYSTEM%5CCurrentControlSet%5CControl%5CLsa%5D%0D%0A%22RunAsPPL%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSYSTEM%5CCurrentControlSet%5CControl%5CCI%5CConfig%5D%0D%0A%22VulnerableDriverBlocklistEnable%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CDataCollection%5D%0D%0A%22AllowTelemetry%22%3Ddword%3A00000001%0D%0A%22LimitDiagnosticLogCollection%22%3Ddword%3A00000001%0D%0A%22LimitDumpCollection%22%3Ddword%3A00000001%0D%0A%22DisableTelemetryOptInSettingsUx%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CGameDVR%5D%0D%0A%22AllowGameDVR%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CSystem%5D%0D%0A%22EnableSmartScreen%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CEdge%5D%0D%0A%22SmartScreenEnabled%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CWTDS%5CComponents%5D%0D%0A%22CaptureThreatWindow%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CWTDS%5CComponents%5D%0D%0A%22ServiceEnabled%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows+Defender%5D%0D%0A%22ServiceKeepAlive%22%3Ddword%3A00000000%0D%0A%22DisableAntiSpyware%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows+Defender%5CReal-Time+Protection%5D%0D%0A%22DisableRealtimeMonitoring%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CDevice+Metadata%5D%0D%0A%22PreventDeviceMetadataFromNetwork%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CWindowsUpdate%5CAU%5D%0D%0A%22NoAutoUpdate%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CWindowsUpdate%5D%0D%0A%22SetDisableUXWUAccess%22%3Ddword%3A00000001%0D%0A%22DoNotConnectToWindowsUpdateInternetLocations%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CSystem%5D%0D%0A%22DisableAutomaticRestartSignOn%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CSystem%5D%0D%0A%22EnableCdp%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CPowerShell%5D%0D%0A%22EnableScripts%22%3Ddword%3A00000001%0D%0A%22ExecutionPolicy%22%3D%22RemoteSigned%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindowsMitigation%5D%0D%0A%22UserPreference%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindowsUpdate%5CUX%5CSettings%5D%0D%0A%22AllowMUUpdateService%22%3Ddword%3A00000000%0D%0A%22IsContinuousInnovationOptedIn%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSYSTEM%5CCurrentControlSet%5CServices%5Cwuauserv%5D%0D%0A%22Start%22%3Ddword%3A00000004%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSYSTEM%5CCurrentControlSet%5CServices%5CWaaSMedicSvc%5D%0D%0A%22Start%22%3Ddword%3A00000004%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSYSTEM%5CCurrentControlSet%5CServices%5CUsoSvc%5D%0D%0A%22Start%22%3Ddword%3A00000004%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows+Defender+Security+Center%5CSystray%5D%0D%0A%22HideSystray%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CRun%5D%0D%0A%22SecurityHealth%22%3D-%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CAppx%5D%0D%0A%22AllowAutomaticAppArchiving%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMozilla%5CFirefox%5D%0D%0A%22DisableAppUpdate%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindowsStore%5D%0D%0A%22AutoDownload%22%3Ddword%3A00000002%0D%0A%22RemoveWindowsStore%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows+NT%5CSystemRestore%5D%0D%0A%22DisableSR%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSYSTEM%5CCurrentControlSet%5CControl%5CSession+Manager%5CMemory+Management%5CPrefetchParameters%5D%0D%0A%22EnablePrefetcher%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CExplorer%5D%0D%0A%22AllowOnlineTips%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSYSTEM%5CCurrentControlSet%5CControl%5CWMI%5CAutoLogger%5CAutoLogger-DiagTrack-Listener%5D%0D%0A%22Start%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CSQMClient%5CWindows%5D%0D%0A%22CEIPEnable%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CAppCompat%5D%0D%0A%22AITEnable%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CInputPersonalization%5D%0D%0A%22AllowInputPersonalization%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CAppPrivacy%5D%0D%0A%22LetAppsAccessLocation%22%3Ddword%3A00000002%0D%0A%22LetAppsAccessLocation_ForceDenyUnsigned%22%3Ddword%3A00000001%0D%0A%22LetAppsAccessCamera%22%3Ddword%3A00000002%0D%0A%22LetAppsAccessCamera_ForceDenyUnsigned%22%3Ddword%3A00000001%0D%0A%22LetAppsAccessAccountInfo%22%3Ddword%3A00000002%0D%0A%22LetAppsAccessContacts%22%3Ddword%3A00000002%0D%0A%22LetAppsAccessCalendar%22%3Ddword%3A00000002%0D%0A%22LetAppsAccessTasks%22%3Ddword%3A00000002%0D%0A%22LetAppsAccessEmail%22%3Ddword%3A00000002%0D%0A%22LetAppsAccessMessaging%22%3Ddword%3A00000002%0D%0A%22LetAppsAccessPhone%22%3Ddword%3A00000002%0D%0A%22LetAppsAccessCallHistory%22%3Ddword%3A00000002%0D%0A%22LetAppsAccessRadios%22%3Ddword%3A00000002%0D%0A%22LetAppsSyncWithDevices%22%3Ddword%3A00000002%0D%0A%22LetAppsAccessTrustedDevices%22%3Ddword%3A00000002%0D%0A%22LetAppsActivateWithVoice%22%3Ddword%3A00000002%0D%0A%22LetAppsActivateWithVoiceAboveLock%22%3Ddword%3A00000002%0D%0A%22LetAppsGetDiagnosticInfo%22%3Ddword%3A00000002%0D%0A%22LetAppsAccessForegroundText%22%3Ddword%3A00000002%0D%0A%22LetAppsAccessPasskeysEnumeration%22%3Ddword%3A00000002%0D%0A%22LetAppsAccessSystemAIModels%22%3Ddword%3A00000002%0D%0A%22LetAppsAccessSystemAIModels_UserInControlOfTheseApps%22%3Dhex%287%29%3A00%2C00%0D%0A%22LetAppsAccessSystemAIModels_ForceAllowTheseApps%22%3Dhex%287%29%3A00%2C00%0D%0A%22LetAppsAccessSystemAIModels_ForceDenyTheseApps%22%3Dhex%287%29%3A00%2C00%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CLocationAndSensors%5D%0D%0A%22DisableLocation%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CAdvertisingInfo%5D%0D%0A%22DisabledByGroupPolicy%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CCapabilityAccessManager%5CConsentStore%5Cwebcam%5D%0D%0A%22Value%22%3D%22Deny%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CCapabilityAccessManager%5CConsentStore%5Cwebcam%5CNonPackaged%5D%0D%0A%22Value%22%3D%22Deny%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CCapabilityAccessManager%5CConsentStore%5CappDiagnostics%5D%0D%0A%22Value%22%3D%22Deny%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CCapabilityAccessManager%5CConsentStore%5CsystemAIModels%5D%0D%0A%22Value%22%3D%22Deny%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CTypeLib%5C%7B8cec5860-07a1-11d9-b15e-000d56bfe6ee%7D%5C1.0%5C0%5Cwin32%5D%0D%0A%40%3D%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CTypeLib%5C%7B8cec5860-07a1-11d9-b15e-000d56bfe6ee%7D%5C1.0%5C0%5Cwin64%5D%0D%0A%40%3D%22%22%0D%0A%0D%0A%5B-HKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindowsUpdate%5COrchestrator%5CUScheduler_Oobe%5CCrossDeviceUpdate%5D%0D%0A%0D%0A%5B-HKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindowsUpdate%5COrchestrator%5CUScheduler_Oobe%5CDevHomeUpdate%5D%0D%0A%0D%0A%5B-HKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindowsUpdate%5COrchestrator%5CUScheduler_Oobe%5CEdgeUpdate%5D%0D%0A%0D%0A%5B-HKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindowsUpdate%5COrchestrator%5CUScheduler_Oobe%5COutlookUpdate%5D&SystemScriptType0=Reg&SystemScript1=%24out+%3D+powercfg.exe+%2Fduplicatescheme+%27e9a42b02-d5df-448d-aa00-03f14749eb61%27%0D%0A%0D%0Aif+%28%24out+-match+%27%28%5Ba-f0-9-%5D%7B36%7D%29%27%29+%7B%0D%0A++++powercfg.exe+%2Fsetactive+%24Matches%5B1%5D%0D%0A%0D%0A++++powercfg.exe+%2Fchange+monitor-timeout-ac+0%0D%0A++++powercfg.exe+%2Fchange+monitor-timeout-dc+0%0D%0A%7D&SystemScriptType1=Ps1&SystemScript2=%24Search+%3D+%27HKLM%3A%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CWindows+Search%27%0D%0A%0D%0ANew-Item+-Path+%24Search+-Force+%7C+Out-Null%0D%0A%0D%0A%24Settings+%3D+%40%7B%0D%0A++++PreventUsingAdvancedIndexingOptions+%3D+1%0D%0A++++AllowCortana+%3D+0%0D%0A++++AllowCloudSearch+%3D+0%0D%0A++++DisableWebSearch+%3D+1%0D%0A++++ConnectedSearchUseWeb+%3D+0%0D%0A++++EnableDynamicContentInWSB+%3D+0%0D%0A%7D%0D%0A%0D%0Aforeach+%28%24Entry+in+%24Settings.GetEnumerator%28%29%29+%7B%0D%0A++++New-ItemProperty+-Path+%24Search+%60%0D%0A++++++++-Name+%24Entry.Key+%60%0D%0A++++++++-PropertyType+DWord+%60%0D%0A++++++++-Value+%24Entry.Value+%60%0D%0A++++++++-Force+%7C+Out-Null%0D%0A%7D%0D%0A%0D%0ASet-Service+-Name+WSearch+-StartupType+Disabled%0D%0AStop-Service+-Name+WSearch+-Force+-ErrorAction+SilentlyContinue%0D%0A%0D%0A%28Get-Service+-Name+WSearch%29.WaitForStatus%28%0D%0A++++%27Stopped%27%2C%0D%0A++++%5BTimeSpan%5D%3A%3AFromSeconds%2830%29%0D%0A%29%0D%0A%0D%0ARemove-Item+-LiteralPath+%22%24env%3AProgramData%5CMicrosoft%5CSearch%5CData%5CApplications%5CWindows%5CWindows.edb%22+%60%0D%0A++++-Force+%60%0D%0A++++-ErrorAction+SilentlyContinue&SystemScriptType2=Ps1&SystemScript3=powercfg.exe+%2Fhibernate+off&SystemScriptType3=Ps1&SystemScript4=%24Ndu+%3D+%27HKLM%3A%5CSYSTEM%5CCurrentControlSet%5CServices%5CNdu%27%0D%0A%0D%0Aif+%28Test-Path+%24Ndu%29+%7B%0D%0A++++New-ItemProperty+-Path+%24Ndu+-Name+%27Start%27+-PropertyType+DWord+-Value+4+-Force+%7C+Out-Null%0D%0A%7D%0D%0A%0D%0ASet-Service+-Name+%27DiagTrack%27+-StartupType+Disabled+-ErrorAction+SilentlyContinue%0D%0AStop-Service+-Name+%27DiagTrack%27+-Force+-ErrorAction+SilentlyContinue&SystemScriptType4=Ps1&SystemScript5=%24Tasks+%3D+%40%28%0D%0A++++%40%7B+TaskPath+%3D+%27%5CMicrosoft%5CWindows%5CMaintenance%5C%27%3B+TaskName+%3D+%27WinSAT%27+%7D%2C%0D%0A++++%40%7B+TaskPath+%3D+%27%5CMicrosoft%5CWindows%5CLanguageComponentsInstaller%5C%27%3B+TaskName+%3D+%27Installation%27+%7D%2C%0D%0A++++%40%7B+TaskPath+%3D+%27%5CMicrosoft%5CWindows%5CCustomer+Experience+Improvement+Program%5C%27%3B+TaskName+%3D+%27Consolidator%27+%7D%2C%0D%0A++++%40%7B+TaskPath+%3D+%27%5CMicrosoft%5CWindows%5CCustomer+Experience+Improvement+Program%5C%27%3B+TaskName+%3D+%27UsbCeip%27+%7D%2C%0D%0A++++%40%7B+TaskPath+%3D+%27%5CMicrosoft%5CWindows%5CFeedback%5CSiuf%5C%27%3B+TaskName+%3D+%27DmClient%27+%7D%2C%0D%0A++++%40%7B+TaskPath+%3D+%27%5CMicrosoft%5CWindows%5CFeedback%5CSiuf%5C%27%3B+TaskName+%3D+%27DmClientOnScenarioDownload%27+%7D%2C%0D%0A++++%40%7B+TaskPath+%3D+%27%5CMicrosoft%5CWindows%5CApplication+Experience%5C%27%3B+TaskName+%3D+%27Microsoft+Compatibility+Appraiser+Exp%27+%7D%2C%0D%0A++++%40%7B+TaskPath+%3D+%27%5CMicrosoft%5CWindows%5CApplication+Experience%5C%27%3B+TaskName+%3D+%27StartupAppTask%27+%7D%0D%0A%29%0D%0A%0D%0Aforeach+%28%24Task+in+%24Tasks%29+%7B%0D%0A++++Disable-ScheduledTask+%40Task+-ErrorAction+SilentlyContinue+%7C+Out-Null%0D%0A%7D&SystemScriptType5=Ps1&SystemScript6=Disable-ScheduledTask+-TaskPath+%27%5CMicrosoft%5CWindows%5CWindowsUpdate%5C%27+%60%0D%0A++++-TaskName+%27Scheduled+Start%27+%60%0D%0A++++-ErrorAction+SilentlyContinue+%7C+Out-Null&SystemScriptType6=Ps1&SystemScript7=Stop-Service+-Name+%27SysMain%27+-Force+-ErrorAction+SilentlyContinue%0D%0ASet-Service+-Name+%27SysMain%27+-StartupType+Disabled+-ErrorAction+SilentlyContinue%0D%0A%0D%0ARemove-Item+-Path+%22%24env%3AWINDIR%5CPrefetch%5C*%22+-Recurse+-Force+-ErrorAction+SilentlyContinue&SystemScriptType7=Ps1&SystemScript8=bcdedit.exe+%2Fset+%7Bcurrent%7D+testsigning+on%0D%0Abcdedit.exe+%2Fset+%7Bcurrent%7D+nointegritychecks+on&SystemScriptType8=Cmd&DefaultUserScript0=Windows+Registry+Editor+Version+5.00%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5D%0D%0A%22ShowRecent%22%3Ddword%3A00000000%0D%0A%22ShowFrequent%22%3Ddword%3A00000000%0D%0A%22ShowCloudFilesInQuickAccess%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAdvanced%5D%0D%0A%22ShowSyncProviderNotifications%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CPolicies%5CMicrosoft%5CWindows%5CCloudContent%5D%0D%0A%22DisableThirdPartySuggestions%22%3Ddword%3A00000001%0D%0A%22DisableWindowsSpotlightFeatures%22%3Ddword%3A00000001%0D%0A%22DisableWindowsSpotlightOnActionCenter%22%3Ddword%3A00000001%0D%0A%22DisableWindowsSpotlightOnSettings%22%3Ddword%3A00000001%0D%0A%22DisableWindowsSpotlightWindowsWelcomeExperience%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CControl+Panel%5CDesktop%5D%0D%0A%22WheelScrollLines%22%3D%226%22%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CMultimedia%5CAudio%5D%0D%0A%22UserDuckingPreference%22%3Ddword%3A00000003%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CAttachments%5D%0D%0A%22SaveZoneInformation%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CPolicies%5CMicrosoft%5CWindows%5CCurrentVersion%5CInternet+Settings%5CZones%5C3%5D%0D%0A%221806%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CGameDVR%5D%0D%0A%22AppCaptureEnabled%22%3Ddword%3A00000000%0D%0A%22HistoricalCaptureEnabled%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSystem%5CGameConfigStore%5D%0D%0A%22GameDVR_Enabled%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CCapabilityAccessManager%5CConsentStore%5Cwebcam%5D%0D%0A%22Value%22%3D%22Deny%22%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CCapabilityAccessManager%5CConsentStore%5Cwebcam%5CNonPackaged%5D%0D%0A%22Value%22%3D%22Deny%22%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CCapabilityAccessManager%5CConsentStore%5CappDiagnostics%5D%0D%0A%22Value%22%3D%22Deny%22%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CCapabilityAccessManager%5CConsentStore%5CsystemAIModels%5D%0D%0A%22Value%22%3D%22Deny%22%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CCapabilityAccessManager%5CConsentStore%5Clocation%5D%0D%0A%22Value%22%3D%22Deny%22%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CPrivacy%5D%0D%0A%22TailoredExperiencesWithDiagnosticDataEnabled%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CPolicies%5CMicrosoft%5CWindows%5CCloudContent%5D%0D%0A%22DisableTailoredExperiencesWithDiagnosticData%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CControl+Panel%5CInternational%5CUser+Profile%5D%0D%0A%22HttpAcceptLanguageOptOut%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAdvanced%5D%0D%0A%22Start_TrackProgs%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CSystemSettings%5CAccountNotifications%5D%0D%0A%22EnableAccountNotifications%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CCPSS%5CStore%5CInkingAndTypingPersonalization%5D%0D%0A%22Value%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CPersonalization%5CSettings%5D%0D%0A%22AcceptedPrivacyPolicy%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CInputPersonalization%5D%0D%0A%22RestrictImplicitInkCollection%22%3Ddword%3A00000001%0D%0A%22RestrictImplicitTextCollection%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CInputPersonalization%5CTrainedDataStore%5D%0D%0A%22HarvestContacts%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CSearchSettings%5D%0D%0A%22IsDeviceSearchHistoryEnabled%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CSpeech_OneCore%5CSettings%5COnlineSpeechPrivacy%5D%0D%0A%22HasAccepted%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CPolicies%5CMicrosoft%5CWindows%5CWindowsCopilot%5D%0D%0A%22TurnOffWindowsCopilot%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CPolicies%5CMicrosoft%5CWindows%5CExplorer%5D%0D%0A%22AlwaysShowNotificationIcon%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CSiuf%5CRules%5D%0D%0A%22PeriodInNanoSeconds%22%3Ddword%3A00000000%0D%0A%22NumberOfSIUFInPeriod%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CControl+Panel%5CAccessibility%5CHighContrast%5D%0D%0A%22Flags%22%3D%22122%22%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CNarrator%5CNoRoam%5D%0D%0A%22WinEnterLaunchEnabled%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CGameBar%5D%0D%0A%22UseNexusForGameBarEnabled%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAdvanced%5D%0D%0A%22ShowClockInNotificationCenter%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CStart%5D%0D%0A%22ShowRecentList%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAdvanced%5D%0D%0A%22Start_TrackDocs%22%3Ddword%3A00000000%0D%0A%22Start_IrisRecommendations%22%3Ddword%3A00000000%0D%0A%22Start_AccountNotifications%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CPolicies%5CMicrosoft%5CWindows%5CCurrentVersion%5CAccountNotifications%5D%0D%0A%22DisableAccountNotifications%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CInput%5CSettings%5D%0D%0A%22EnableAutocorrection%22%3Ddword%3A00000000%0D%0A%22InsightsEnabled%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CPolicies%5CMicrosoft%5CControl+Panel%5CInternational%5D%0D%0A%22TurnOffAutocorrectMisspelledWords%22%3Ddword%3A00000001%0D%0A%22TurnOffHighlightMisspelledWords%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CCrossDeviceResume%5CConfiguration%5D%0D%0A%22IsResumeAllowed%22%3Ddword%3A00000000%0D%0A%22IsOneDriveResumeAllowed%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAdvanced%5D%0D%0A%22IsEnabled%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CCDP%5D%0D%0A%22EnablePromotionalAppsForShare%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAdvanced%5D%0D%0A%22MultiTaskingAltTabFilter%22%3Ddword%3A00000003%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CLighting%5D%0D%0A%22AmbientLightingEnabled%22%3Ddword%3A00000000%0D%0A%22ControlledByForegroundApp%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CUserProfileEngagement%5D%0D%0A%22ScoobeSystemSettingEnabled%22%3Ddword%3A00000000%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAutoplayHandlers%5CUserChosenExecuteHandlers%5CCameraAlternate%5CShowPicturesOnArrival%5D%0D%0A%40%3D%22MSTakeNoAction%22%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAutoplayHandlers%5CEventHandlersDefaultSelection%5CCameraAlternate%5CShowPicturesOnArrival%5D%0D%0A%40%3D%22MSTakeNoAction%22%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAutoplayHandlers%5CUserChosenExecuteHandlers%5CStorageOnArrival%5D%0D%0A%40%3D%22MSTakeNoAction%22%0D%0A%0D%0A%5BHKEY_USERS%5CDefaultUser%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAutoplayHandlers%5CEventHandlersDefaultSelection%5CStorageOnArrival%5D%0D%0A%40%3D%22MSTakeNoAction%22&DefaultUserScriptType0=Reg&FirstLogonScript0=DISM.exe+%2FOnline+%2FSet-ReservedStorageState+%2FState%3ADisabled&FirstLogonScriptType0=Ps1&UserOnceScript0=Windows+Registry+Editor+Version+5.00%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CContentDeliveryManager%5D%0D%0A%22ContentDeliveryAllowed%22%3Ddword%3A00000000&UserOnceScriptType0=Reg&AppLockerMode=Skip-->
+	<settings pass="offlineServicing"></settings>
+	<settings pass="windowsPE">
+		<component name="Microsoft-Windows-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+			<RunSynchronous>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>1</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:@echo off&amp;echo:call :print ^"Setting keyboard layout for PE session^"&amp;echo:wpeutil.exe SetKeyboardLayout 0409:00000409&amp;echo:for ^%^%d in (C D E F G H I J K L M N O P Q T U V X Y Z^) do ()</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>2</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:if exist ^%^%d:\sources\install.wim set ^"IMAGE_FILE=^%^%d:\sources\install.wim^"&amp;echo:if exist ^%^%d:\sources\install.esd set ^"IMAGE_FILE=^%^%d:\sources\install.esd^")</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>3</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:if exist ^%^%d:\autounattend.xml set ^"XML_FILE=^%^%d:\autounattend.xml^")</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>4</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:if exist ^%^%d:\$OEM$ set ^"OEM_FOLDER=^%^%d:\$OEM$^"&amp;echo:if exist ^%^%d:\$WinPEDriver$ set ^"PEDRIVERS_FOLDER=^%^%d:\$WinPEDriver$^"&amp;echo:if exist ^%^%d:\$WinPEPackage$ set ^"MSU_FOLDER=^%^%d:\$WinPEPackage$^"&amp;echo:^))</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>5</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:for /f ^"tokens=3^" ^%^%t in ('reg.exe query HKLM\System\Setup /v UnattendFile 2^^^&gt;nul'^) do ( if exist ^%^%t set ^"XML_FILE=^%^%t^" ^))</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>6</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:if not defined IMAGE_FILE call :fail ^"Could not locate install.wim or install.esd.^"&amp;echo:if not defined XML_FILE call :fail ^"Could not locate autounattend.xml.^"&amp;echo:set ^"OS_VERSION=11^")</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>7</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:for /f ^"tokens=3 delims=.^" ^%^%v in ('ver'^) do (&amp;echo:if ^%^%v LSS 20000 set ^"OS_VERSION=10^"&amp;echo:^)&amp;echo:if defined PEDRIVERS_FOLDER (&amp;echo:call :print ^"Loading drivers from ^%PEDRIVERS_FOLDER^%^")</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>8</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:for /R ^%PEDRIVERS_FOLDER^% ^%^%f IN (*.inf^) do drvload.exe ^"^%^%f^"&amp;echo:^)&amp;echo:wpeutil.exe UpdateBootInfo&amp;echo:for /f ^"tokens=3^" ^%^%t in ('reg.exe query HKLM\System\CurrentControlSet\Control /v PEFirmwareType'^) do ()</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>9</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:if ^%^%t == 0x1 (&amp;echo:set ^"LAYOUT=MBR^"&amp;echo:set ^"FIRMWARE=BIOS^"&amp;echo:^) else if ^%^%t == 0x2 (&amp;echo:set ^"LAYOUT=GPT^"&amp;echo:set ^"FIRMWARE=UEFI^"&amp;echo:^) else (&amp;echo:call :fail ^"Unexpected PEFirmwareType value ^%^%t.^")</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>10</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:^)&amp;echo:^)&amp;echo:call :print ^"The computer is booted in ^%FIRMWARE^% mode, hence the target disk must be configured with the ^%LAYOUT^% partition layout^"&amp;echo:^&gt;X:\diskpart.txt (&amp;echo:echo:SELECT DISK=0&amp;echo:echo:CLEAN)</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>11</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:echo:CONVERT GPT&amp;echo:echo:CREATE PARTITION EFI SIZE=200&amp;echo:echo:FORMAT QUICK FS=FAT32 LABEL=^^^"EFI^^^"&amp;echo:echo:ASSIGN LETTER=S&amp;echo:echo:CREATE PARTITION MSR SIZE=16&amp;echo:echo:CREATE PARTITION PRIMARY SIZE=81925)</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>12</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:echo:FORMAT QUICK FS=NTFS LABEL=^^^"System^^^"&amp;echo:echo:ASSIGN LETTER=W&amp;echo:echo:LIST PARTITION&amp;echo:echo:LIST VOLUME&amp;echo:echo:EXIT&amp;echo:^)&amp;echo:call :print ^"diskpart will now execute your script^"&amp;echo:pause)</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>13</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:diskpart.exe /s X:\diskpart.txt ^|^| call :fail ^"diskpart.exe encountered an error.^"&amp;echo:set ^"IMG_PARAM=/Name:^"Windows ^%OS_VERSION^% Pro^"^"&amp;echo:call :print ^"Applying Windows image to target disk^")</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>14</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:dism.exe /Apply-Image /ImageFile:^%IMAGE_FILE^% ^%IMG_PARAM^% /ApplyDir:W:\ /CheckIntegrity /Verify ^|^| call :fail ^"dism.exe encountered an error.^"&amp;echo:call :print ^"Making system partition bootable^")</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>15</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:bcdboot.exe W:\Windows /s S: ^|^| call :fail ^"bcdboot.exe encountered an error.^"&amp;echo:if ^%LAYOUT^% == GPT (&amp;echo:bcdedit.exe /set {fwbootmgr} bootsequence {bootmgr} ^|^| call :fail ^"bcdedit.exe encountered an error.^")</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>16</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:^)&amp;echo:if defined MSU_FOLDER (&amp;echo:call :print ^"Adding packages from ^%MSU_FOLDER^% to new installation^")</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>17</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:dism.exe /Add-Package /Image:W:\ /PackagePath:^%MSU_FOLDER^% /ScratchDir:W:\Windows\Temp ^|^| call :fail ^"dism.exe encountered an error.^"&amp;echo:^))</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>18</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:call :print ^"Deleting winre.wim file to avoid creation of recovery partition^"&amp;echo:if exist W:\Windows\System32\Recovery\winre.wim del /f /q W:\Windows\System32\Recovery\winre.wim&amp;echo:call :print ^"Copying answer file to target disk^"&amp;echo:mkdir W:\Windows\Panther)</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>19</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:copy ^%XML_FILE^% W:\Windows\Panther\unattend.xml&amp;echo:if defined PEDRIVERS_FOLDER (&amp;echo:call :print ^"Adding drivers from ^%PEDRIVERS_FOLDER^% to new installation^")</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>20</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:dism.exe /Add-Driver /Image:W:\ /Driver:^"^%PEDRIVERS_FOLDER^%^" /Recurse&amp;echo:^)&amp;echo:call :print ^"Setting time zone^"&amp;echo:dism.exe /Image:W:\ /Set-TimeZone:^"Central European Standard Time^")</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>21</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:call :print ^"Disabling 8.3 file names^"&amp;echo:fsutil.exe 8dot3name set W: 1&amp;echo:fsutil.exe 8dot3name strip /s /f W:\&amp;echo:reg.exe LOAD HKLM\mount W:\Windows\System32\config\SYSTEM)</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>22</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:reg.exe ADD HKLM\mount\ControlSet001\Control\FileSystem /v NtfsDisable8dot3NameCreation /t REG_DWORD /d 1 /f&amp;echo:reg.exe UNLOAD HKLM\mount&amp;echo:call :print ^"Disabling Windows Defender^")</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>23</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:reg.exe LOAD HKLM\mount W:\Windows\System32\config\SYSTEM&amp;echo:for ^%^%s in (Sense WdBoot WdFilter WdNisDrv WdNisSvc WinDefend MDCoreSvc SecurityHealthService WscSvc^) do reg.exe ADD HKLM\mount\ControlSet001\Services\^%^%s /v Start /t REG_DWORD /d 4 /f)</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>24</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:reg.exe UNLOAD HKLM\mount&amp;echo:call :print ^"Disabling WPBT^"&amp;echo:reg.exe LOAD HKLM\mount W:\Windows\System32\config\SYSTEM)</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>25</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:reg.exe add ^"HKLM\mount\ControlSet001\Control\Session Manager^" /v DisableWpbtExecution /t REG_DWORD /d 1 /f&amp;echo:reg.exe UNLOAD HKLM\mount&amp;echo:call :print ^"Configuring paging file^")</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>26</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:reg.exe LOAD HKLM\mount W:\Windows\System32\config\SYSTEM&amp;echo:reg.exe add ^"HKLM\mount\ControlSet001\Control\Session Manager\Memory Management^" /v PagingFiles /t REG_MULTI_SZ /f /d ^"C:\pagefile.sys 8192 8192^")</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>27</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:reg.exe UNLOAD HKLM\mount&amp;echo:call :print ^"Setting device setup region to North Macedonia (GeoID 19618^)^"&amp;echo:reg.exe LOAD HKLM\mount W:\Windows\System32\config\SOFTWARE)</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>28</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:reg.exe ADD ^"HKLM\mount\Microsoft\Windows\CurrentVersion\Control Panel\DeviceRegion^" /v DeviceRegion /t REG_DWORD /d 19618 /f&amp;echo:reg.exe UNLOAD HKLM\mount&amp;echo:set ^"ROBOCOPY_ARGS=/E /XX /COPY:DAT /DCOPY:DAT /R:0^")</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>29</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:if defined OEM_FOLDER (&amp;echo:call :print ^"Copying contents of ^%OEM_FOLDER^%^"&amp;echo:if exist ^"^%OEM_FOLDER^%\$$^" robocopy.exe ^"^%OEM_FOLDER^%\$$^" W:\Windows ^%ROBOCOPY_ARGS^%)</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>30</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:if exist ^"^%OEM_FOLDER^%\$1^" robocopy.exe ^"^%OEM_FOLDER^%\$1^" W:\ ^%ROBOCOPY_ARGS^%&amp;echo:for ^%^%d in (C D E F G H I J K L M N O P Q R S T U V W X Y Z^) do ()</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>31</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:if exist ^"^%OEM_FOLDER^%\^%^%d^" robocopy.exe ^"^%OEM_FOLDER^%\^%^%d^" ^%^%d:\ ^%ROBOCOPY_ARGS^%&amp;echo:^)&amp;echo:^)&amp;echo:call :print ^"Computer will now reboot^"&amp;echo:wpeutil.exe reboot&amp;echo:goto :eof&amp;echo::fail&amp;echo:echo:)</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>32</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:echo:Fatal error: ^%~1&amp;echo:echo:&amp;echo:pause&amp;echo:exit 1&amp;echo::print&amp;echo:echo:&amp;echo:echo:^%~1 &amp;echo:echo:&amp;echo:goto :eof)</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>33</Order>
+					<Path>cmd.exe /c "X:\pe.cmd"</Path>
+				</RunSynchronousCommand>
+			</RunSynchronous>
+		</component>
+	</settings>
+	<settings pass="generalize"></settings>
+	<settings pass="specialize">
+		<component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+			<TimeZone>Central European Standard Time</TimeZone>
+			<ConfigureChatAutoInstall>false</ConfigureChatAutoInstall>
+		</component>
+		<component name="Microsoft-Windows-RemoteAssistance-Exe" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+        		<fAllowToGetHelp>false</fAllowToGetHelp>
+    		</component>
+		<component name="Microsoft-Windows-Deployment" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+			<RunSynchronous>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>1</Order>
+					<Path>powershell.exe -WindowStyle "Normal" -NoProfile -Command "$xml = [xml]::new(); $xml.Load('C:\Windows\Panther\unattend.xml'); $sb = [scriptblock]::Create( $xml.unattend.Extensions.ExtractScript ); Invoke-Command -ScriptBlock $sb -ArgumentList $xml;"</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>2</Order>
+					<Path>powershell.exe -WindowStyle "Normal" -ExecutionPolicy "Unrestricted" -NoProfile -File "C:\Windows\Setup\Scripts\Specialize.ps1"</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>3</Order>
+					<Path>reg.exe load "HKU\DefaultUser" "C:\Users\Default\NTUSER.DAT"</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>4</Order>
+					<Path>powershell.exe -WindowStyle "Normal" -ExecutionPolicy "Unrestricted" -NoProfile -File "C:\Windows\Setup\Scripts\DefaultUser.ps1"</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>5</Order>
+					<Path>reg.exe unload "HKU\DefaultUser"</Path>
+				</RunSynchronousCommand>
+			</RunSynchronous>
+		</component>
+	</settings>
+	<settings pass="auditSystem"></settings>
+	<settings pass="auditUser"></settings>
+	<settings pass="oobeSystem">
+		<component name="Microsoft-Windows-International-Core" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+			<InputLocale>0409:00000409;042f:0000042f</InputLocale>
+			<SystemLocale>mk-MK</SystemLocale>
+			<UILanguage>en-US</UILanguage>
+			<UserLocale>en-US</UserLocale>
+		</component>
+		<component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+			<UserAccounts>
+				<LocalAccounts>
+					<LocalAccount wcm:action="add">
+						<Name>Admin</Name>
+						<DisplayName></DisplayName>
+						<Group>Administrators</Group>
+						<Password>
+							<Value></Value>
+							<PlainText>true</PlainText>
+						</Password>
+					</LocalAccount>
+				</LocalAccounts>
+			</UserAccounts>
+			<AutoLogon>
+				<Username>Admin</Username>
+				<Enabled>true</Enabled>
+				<LogonCount>1</LogonCount>
+				<Password>
+					<Value></Value>
+					<PlainText>true</PlainText>
+				</Password>
+			</AutoLogon>
+			<OOBE>
+				<ProtectYourPC>3</ProtectYourPC>
+				<HideEULAPage>true</HideEULAPage>
+				<HideWirelessSetupInOOBE>false</HideWirelessSetupInOOBE>
+				<HideOnlineAccountScreens>true</HideOnlineAccountScreens>
+			</OOBE>
+			<FirstLogonCommands>
+				<SynchronousCommand wcm:action="add">
+					<Order>1</Order>
+					<CommandLine>powershell.exe -WindowStyle "Normal" -ExecutionPolicy "Unrestricted" -NoProfile -File "C:\Windows\Setup\Scripts\FirstLogon.ps1"</CommandLine>
+				</SynchronousCommand>
+			</FirstLogonCommands>
+		</component>
+	</settings>
+	<Extensions xmlns="https://schneegans.de/windows/unattend-generator/">
+		<Build>
+			<Commit>
+				<Hash>8fdf1b99af95977ea38f4922662964dc6324b0df</Hash>
+				<GitHubUrl>https://github.com/cschneegans/unattend-generator/commit/8fdf1b99af95977ea38f4922662964dc6324b0df</GitHubUrl>
+			</Commit>
+			<PEScriptCopy>
+@echo off
+
+call :print "Setting keyboard layout for PE session"
+wpeutil.exe SetKeyboardLayout 0409:00000409
+
+for %%d in (C D E F G H I J K L M N O P Q T U V X Y Z) do (
+    if exist %%d:\sources\install.wim set "IMAGE_FILE=%%d:\sources\install.wim"
+    if exist %%d:\sources\install.esd set "IMAGE_FILE=%%d:\sources\install.esd"
+    if exist %%d:\autounattend.xml set "XML_FILE=%%d:\autounattend.xml"
+    if exist %%d:\$OEM$ set "OEM_FOLDER=%%d:\$OEM$"
+    if exist %%d:\$WinPEDriver$ set "PEDRIVERS_FOLDER=%%d:\$WinPEDriver$"
+    if exist %%d:\$WinPEPackage$ set "MSU_FOLDER=%%d:\$WinPEPackage$"
+)
+for /f "tokens=3" %%t in ('reg.exe query HKLM\System\Setup /v UnattendFile 2^&gt;nul') do ( if exist %%t set "XML_FILE=%%t" )
+if not defined IMAGE_FILE call :fail "Could not locate install.wim or install.esd."
+if not defined XML_FILE call :fail "Could not locate autounattend.xml."
+
+set "OS_VERSION=11"
+for /f "tokens=3 delims=." %%v in ('ver') do (
+    if %%v LSS 20000 set "OS_VERSION=10"
+)
+
+if defined PEDRIVERS_FOLDER (
+    call :print "Loading drivers from %PEDRIVERS_FOLDER%"
+    for /R %PEDRIVERS_FOLDER% %%f IN (*.inf) do drvload.exe "%%f"
+)
+
+wpeutil.exe UpdateBootInfo
+for /f "tokens=3" %%t in ('reg.exe query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') do (
+    if %%t == 0x1 (
+        set "LAYOUT=MBR"
+        set "FIRMWARE=BIOS"
+    ) else if %%t == 0x2 (
+        set "LAYOUT=GPT"
+        set "FIRMWARE=UEFI"
+    ) else (
+        call :fail "Unexpected PEFirmwareType value %%t."
+    )
+)
+call :print "The computer is booted in %FIRMWARE% mode, hence the target disk must be configured with the %LAYOUT% partition layout"
+&gt;X:\diskpart.txt (
+    echo:SELECT DISK=0
+    echo:CLEAN
+    echo:CONVERT GPT
+    echo:CREATE PARTITION EFI SIZE=200
+    echo:FORMAT QUICK FS=FAT32 LABEL=^"EFI^"
+    echo:ASSIGN LETTER=S
+    echo:CREATE PARTITION MSR SIZE=16
+    echo:CREATE PARTITION PRIMARY SIZE=81925
+    echo:FORMAT QUICK FS=NTFS LABEL=^"System^"
+    echo:ASSIGN LETTER=W
+    echo:LIST PARTITION
+    echo:LIST VOLUME
+    echo:EXIT
+)
+
+call :print "diskpart will now execute your script"
+pause
+diskpart.exe /s X:\diskpart.txt || call :fail "diskpart.exe encountered an error."
+
+set "IMG_PARAM=/Name:"Windows %OS_VERSION% Pro""
+call :print "Applying Windows image to target disk"
+dism.exe /Apply-Image /ImageFile:%IMAGE_FILE% %IMG_PARAM% /ApplyDir:W:\ /CheckIntegrity /Verify || call :fail "dism.exe encountered an error."
+
+call :print "Making system partition bootable"
+bcdboot.exe W:\Windows /s S: || call :fail "bcdboot.exe encountered an error."
+if %LAYOUT% == GPT (
+    bcdedit.exe /set {fwbootmgr} bootsequence {bootmgr} || call :fail "bcdedit.exe encountered an error."
+)
+
+if defined MSU_FOLDER (
+    call :print "Adding packages from %MSU_FOLDER% to new installation"
+    dism.exe /Add-Package /Image:W:\ /PackagePath:%MSU_FOLDER% /ScratchDir:W:\Windows\Temp || call :fail "dism.exe encountered an error."
+)
+
+call :print "Deleting winre.wim file to avoid creation of recovery partition"
+if exist W:\Windows\System32\Recovery\winre.wim del /f /q W:\Windows\System32\Recovery\winre.wim
+
+call :print "Copying answer file to target disk"
+mkdir W:\Windows\Panther
+copy %XML_FILE% W:\Windows\Panther\unattend.xml
+
+if defined PEDRIVERS_FOLDER (
+    call :print "Adding drivers from %PEDRIVERS_FOLDER% to new installation"
+    dism.exe /Add-Driver /Image:W:\ /Driver:"%PEDRIVERS_FOLDER%" /Recurse
+)
+
+call :print "Setting time zone"
+dism.exe /Image:W:\ /Set-TimeZone:"Central European Standard Time"
+
+call :print "Disabling 8.3 file names"
+fsutil.exe 8dot3name set W: 1
+fsutil.exe 8dot3name strip /s /f W:\
+reg.exe LOAD HKLM\mount W:\Windows\System32\config\SYSTEM
+reg.exe ADD HKLM\mount\ControlSet001\Control\FileSystem /v NtfsDisable8dot3NameCreation /t REG_DWORD /d 1 /f
+reg.exe UNLOAD HKLM\mount
+
+call :print "Disabling Windows Defender"
+reg.exe LOAD HKLM\mount W:\Windows\System32\config\SYSTEM
+for %%s in (Sense WdBoot WdFilter WdNisDrv WdNisSvc WinDefend MDCoreSvc SecurityHealthService WscSvc) do reg.exe ADD HKLM\mount\ControlSet001\Services\%%s /v Start /t REG_DWORD /d 4 /f
+reg.exe UNLOAD HKLM\mount
+
+call :print "Disabling WPBT"
+reg.exe LOAD HKLM\mount W:\Windows\System32\config\SYSTEM
+reg.exe add "HKLM\mount\ControlSet001\Control\Session Manager" /v DisableWpbtExecution /t REG_DWORD /d 1 /f
+reg.exe UNLOAD HKLM\mount
+
+call :print "Configuring paging file"
+reg.exe LOAD HKLM\mount W:\Windows\System32\config\SYSTEM
+reg.exe add "HKLM\mount\ControlSet001\Control\Session Manager\Memory Management" /v PagingFiles /t REG_MULTI_SZ /f /d "C:\pagefile.sys 8192 8192"
+reg.exe UNLOAD HKLM\mount
+
+call :print "Setting device setup region to North Macedonia (GeoID 19618)"
+reg.exe LOAD HKLM\mount W:\Windows\System32\config\SOFTWARE
+reg.exe ADD "HKLM\mount\Microsoft\Windows\CurrentVersion\Control Panel\DeviceRegion" /v DeviceRegion /t REG_DWORD /d 19618 /f
+reg.exe UNLOAD HKLM\mount
+
+set "ROBOCOPY_ARGS=/E /XX /COPY:DAT /DCOPY:DAT /R:0"
+if defined OEM_FOLDER (
+    call :print "Copying contents of %OEM_FOLDER%"
+    if exist "%OEM_FOLDER%\$$" robocopy.exe "%OEM_FOLDER%\$$" W:\Windows %ROBOCOPY_ARGS%
+    if exist "%OEM_FOLDER%\$1" robocopy.exe "%OEM_FOLDER%\$1" W:\ %ROBOCOPY_ARGS%
+    for %%d in (C D E F G H I J K L M N O P Q R S T U V W X Y Z) do (
+        if exist "%OEM_FOLDER%\%%d" robocopy.exe "%OEM_FOLDER%\%%d" %%d:\ %ROBOCOPY_ARGS%
+    )
+)
+
+call :print "Computer will now reboot"
+wpeutil.exe reboot
+goto :eof
+
+:fail
+echo:
+echo:Fatal error: %~1
+echo:
+pause
+exit 1
+
+:print
+echo:
+echo:%~1
+echo:
+goto :eof
+			</PEScriptCopy>
+		</Build>
+		<ExtractScript>
+param(
+    [xml] $Document
+);
+
+foreach( $file in $Document.unattend.Extensions.File ) {
+    $path = [System.Environment]::ExpandEnvironmentVariables( $file.GetAttribute( 'path' ) );
+    mkdir -Path( $path | Split-Path -Parent ) -ErrorAction 'SilentlyContinue';
+    $encoding = switch( [System.IO.Path]::GetExtension( $path ) ) {
+        { $_ -in '.ps1', '.xml' } { [System.Text.Encoding]::UTF8; }
+        { $_ -in '.reg', '.vbs', '.js' } { [System.Text.UnicodeEncoding]::new( $false, $true ); }
+        default { [System.Text.Encoding]::Default; }
+    };
+    $bytes = $encoding.GetPreamble() + $encoding.GetBytes( $file.InnerText.Trim() );
+    [System.IO.File]::WriteAllBytes( $path, $bytes );
+}
+		</ExtractScript>
+		<File path="C:\Windows\Setup\Scripts\unattend-01.reg">
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoDriveAutoRun"=dword:03ffffff
+"NoDriveTypeAutoRun"=dword:000000ff
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"ConsentPromptBehaviorAdmin"=dword:00000000
+"EnableInstallerDetection"=dword:00000000
+"EnableSecureUIAPaths"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OneDrive]
+"DisableFileSyncNGSC"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization]
+"DODownloadMode"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableCloudOptimizedContent"=dword:00000001
+"DisableSoftLanding"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+"RunAsPPL"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CI\Config]
+"VulnerableDriverBlocklistEnable"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowTelemetry"=dword:00000001
+"LimitDiagnosticLogCollection"=dword:00000001
+"LimitDumpCollection"=dword:00000001
+"DisableTelemetryOptInSettingsUx"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\GameDVR]
+"AllowGameDVR"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"EnableSmartScreen"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+"SmartScreenEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WTDS\Components]
+"CaptureThreatWindow"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WTDS\Components]
+"ServiceEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
+"ServiceKeepAlive"=dword:00000000
+"DisableAntiSpyware"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection]
+"DisableRealtimeMonitoring"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Device Metadata]
+"PreventDeviceMetadataFromNetwork"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoUpdate"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"SetDisableUXWUAccess"=dword:00000001
+"DoNotConnectToWindowsUpdateInternetLocations"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"DisableAutomaticRestartSignOn"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"EnableCdp"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\PowerShell]
+"EnableScripts"=dword:00000001
+"ExecutionPolicy"="RemoteSigned"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsMitigation]
+"UserPreference"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
+"AllowMUUpdateService"=dword:00000000
+"IsContinuousInnovationOptedIn"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wuauserv]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WaaSMedicSvc]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UsoSvc]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Systray]
+"HideSystray"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
+"SecurityHealth"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Appx]
+"AllowAutomaticAppArchiving"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox]
+"DisableAppUpdate"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore]
+"AutoDownload"=dword:00000002
+"RemoveWindowsStore"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore]
+"DisableSR"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters]
+"EnablePrefetcher"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"AllowOnlineTips"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\AutoLogger\AutoLogger-DiagTrack-Listener]
+"Start"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SQMClient\Windows]
+"CEIPEnable"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat]
+"AITEnable"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\InputPersonalization]
+"AllowInputPersonalization"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessLocation"=dword:00000002
+"LetAppsAccessLocation_ForceDenyUnsigned"=dword:00000001
+"LetAppsAccessCamera"=dword:00000002
+"LetAppsAccessCamera_ForceDenyUnsigned"=dword:00000001
+"LetAppsAccessAccountInfo"=dword:00000002
+"LetAppsAccessContacts"=dword:00000002
+"LetAppsAccessCalendar"=dword:00000002
+"LetAppsAccessTasks"=dword:00000002
+"LetAppsAccessEmail"=dword:00000002
+"LetAppsAccessMessaging"=dword:00000002
+"LetAppsAccessPhone"=dword:00000002
+"LetAppsAccessCallHistory"=dword:00000002
+"LetAppsAccessRadios"=dword:00000002
+"LetAppsSyncWithDevices"=dword:00000002
+"LetAppsAccessTrustedDevices"=dword:00000002
+"LetAppsActivateWithVoice"=dword:00000002
+"LetAppsActivateWithVoiceAboveLock"=dword:00000002
+"LetAppsGetDiagnosticInfo"=dword:00000002
+"LetAppsAccessForegroundText"=dword:00000002
+"LetAppsAccessPasskeysEnumeration"=dword:00000002
+"LetAppsAccessSystemAIModels"=dword:00000002
+"LetAppsAccessSystemAIModels_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessSystemAIModels_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessSystemAIModels_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors]
+"DisableLocation"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo]
+"DisabledByGroupPolicy"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DriverSearching]
+"SearchOrderConfig"=dword:00000000
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam\NonPackaged]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appDiagnostics]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\systemAIModels]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{8cec5860-07a1-11d9-b15e-000d56bfe6ee}\1.0\0\win32]
+@=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\TypeLib\{8cec5860-07a1-11d9-b15e-000d56bfe6ee}\1.0\0\win64]
+@=""
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe\CrossDeviceUpdate]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe\DevHomeUpdate]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe\EdgeUpdate]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe\OutlookUpdate]
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-02.ps1">
+$out = powercfg.exe /duplicatescheme 'e9a42b02-d5df-448d-aa00-03f14749eb61'
+
+if ($out -match '([a-f0-9-]{36})') {
+    powercfg.exe /setactive $Matches[1]
+
+    powercfg.exe /change monitor-timeout-ac 0
+    powercfg.exe /change monitor-timeout-dc 0
+}
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-03.ps1">
+$Search = 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search'
+
+New-Item -Path $Search -Force | Out-Null
+
+$Settings = @{
+    PreventUsingAdvancedIndexingOptions = 1
+    AllowCortana = 0
+    AllowCloudSearch = 0
+    DisableWebSearch = 1
+    ConnectedSearchUseWeb = 0
+    EnableDynamicContentInWSB = 0
+}
+
+foreach ($Entry in $Settings.GetEnumerator()) {
+    New-ItemProperty -Path $Search `
+        -Name $Entry.Key `
+        -PropertyType DWord `
+        -Value $Entry.Value `
+        -Force | Out-Null
+}
+
+Set-Service -Name WSearch -StartupType Disabled
+Stop-Service -Name WSearch -Force -ErrorAction SilentlyContinue
+
+(Get-Service -Name WSearch).WaitForStatus(
+    'Stopped',
+    [TimeSpan]::FromSeconds(30)
+)
+
+Remove-Item -LiteralPath "$env:ProgramData\Microsoft\Search\Data\Applications\Windows\Windows.edb" `
+    -Force `
+    -ErrorAction SilentlyContinue
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-04.ps1">
+powercfg.exe /hibernate off
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-05.ps1">
+$Ndu = 'HKLM:\SYSTEM\CurrentControlSet\Services\Ndu'
+
+if (Test-Path $Ndu) {
+    New-ItemProperty -Path $Ndu -Name 'Start' -PropertyType DWord -Value 4 -Force | Out-Null
+}
+
+Set-Service -Name 'DiagTrack' -StartupType Disabled -ErrorAction SilentlyContinue
+Stop-Service -Name 'DiagTrack' -Force -ErrorAction SilentlyContinue
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-06.ps1">
+$Tasks = @(
+    @{ TaskPath = '\Microsoft\Windows\Maintenance\'; TaskName = 'WinSAT' },
+    @{ TaskPath = '\Microsoft\Windows\LanguageComponentsInstaller\'; TaskName = 'Installation' },
+    @{ TaskPath = '\Microsoft\Windows\Customer Experience Improvement Program\'; TaskName = 'Consolidator' },
+    @{ TaskPath = '\Microsoft\Windows\Customer Experience Improvement Program\'; TaskName = 'UsbCeip' },
+    @{ TaskPath = '\Microsoft\Windows\Feedback\Siuf\'; TaskName = 'DmClient' },
+    @{ TaskPath = '\Microsoft\Windows\Feedback\Siuf\'; TaskName = 'DmClientOnScenarioDownload' },
+    @{ TaskPath = '\Microsoft\Windows\Application Experience\'; TaskName = 'Microsoft Compatibility Appraiser Exp' },
+    @{ TaskPath = '\Microsoft\Windows\Application Experience\'; TaskName = 'StartupAppTask' }
+)
+
+foreach ($Task in $Tasks) {
+    Disable-ScheduledTask @Task -ErrorAction SilentlyContinue | Out-Null
+}
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-07.ps1">
+Disable-ScheduledTask -TaskPath '\Microsoft\Windows\WindowsUpdate\' `
+    -TaskName 'Scheduled Start' `
+    -ErrorAction SilentlyContinue | Out-Null
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-08.ps1">
+Stop-Service -Name 'SysMain' -Force -ErrorAction SilentlyContinue
+Set-Service -Name 'SysMain' -StartupType Disabled -ErrorAction SilentlyContinue
+
+Remove-Item -Path "$env:WINDIR\Prefetch\*" -Recurse -Force -ErrorAction SilentlyContinue
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-09.cmd">
+bcdedit.exe /set {current} testsigning on
+bcdedit.exe /set {current} nointegritychecks on
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-0a.ps1">
+DISM.exe /Online /Set-ReservedStorageState /State:Disabled
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-0b.reg">
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"ContentDeliveryAllowed"=dword:00000000
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-0c.reg">
+Windows Registry Editor Version 5.00
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"ShowRecent"=dword:00000000
+"ShowFrequent"=dword:00000000
+"ShowCloudFilesInQuickAccess"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowSyncProviderNotifications"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Policies\Microsoft\Windows\CloudContent]
+"DisableThirdPartySuggestions"=dword:00000001
+"DisableWindowsSpotlightFeatures"=dword:00000001
+"DisableWindowsSpotlightOnActionCenter"=dword:00000001
+"DisableWindowsSpotlightOnSettings"=dword:00000001
+"DisableWindowsSpotlightWindowsWelcomeExperience"=dword:00000001
+
+[HKEY_USERS\DefaultUser\Control Panel\Desktop]
+"WheelScrollLines"="6"
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Multimedia\Audio]
+"UserDuckingPreference"=dword:00000003
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments]
+"SaveZoneInformation"=dword:00000001
+
+[HKEY_USERS\DefaultUser\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]
+"1806"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\GameDVR]
+"AppCaptureEnabled"=dword:00000000
+"HistoricalCaptureEnabled"=dword:00000000
+
+[HKEY_USERS\DefaultUser\System\GameConfigStore]
+"GameDVR_Enabled"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam]
+"Value"="Deny"
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam\NonPackaged]
+"Value"="Deny"
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appDiagnostics]
+"Value"="Deny"
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\systemAIModels]
+"Value"="Deny"
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location]
+"Value"="Deny"
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Privacy]
+"TailoredExperiencesWithDiagnosticDataEnabled"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Policies\Microsoft\Windows\CloudContent]
+"DisableTailoredExperiencesWithDiagnosticData"=dword:00000001
+
+[HKEY_USERS\DefaultUser\Control Panel\International\User Profile]
+"HttpAcceptLanguageOptOut"=dword:00000001
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_TrackProgs"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\SystemSettings\AccountNotifications]
+"EnableAccountNotifications"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\CPSS\Store\InkingAndTypingPersonalization]
+"Value"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Personalization\Settings]
+"AcceptedPrivacyPolicy"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\InputPersonalization]
+"RestrictImplicitInkCollection"=dword:00000001
+"RestrictImplicitTextCollection"=dword:00000001
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\InputPersonalization\TrainedDataStore]
+"HarvestContacts"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\SearchSettings]
+"IsDeviceSearchHistoryEnabled"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Speech_OneCore\Settings\OnlineSpeechPrivacy]
+"HasAccepted"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Policies\Microsoft\Windows\WindowsCopilot]
+"TurnOffWindowsCopilot"=dword:00000001
+
+[HKEY_USERS\DefaultUser\Software\Policies\Microsoft\Windows\Explorer]
+"AlwaysShowNotificationIcon"=dword:00000001
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Siuf\Rules]
+"PeriodInNanoSeconds"=dword:00000000
+"NumberOfSIUFInPeriod"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Control Panel\Accessibility\HighContrast]
+"Flags"="122"
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Narrator\NoRoam]
+"WinEnterLaunchEnabled"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\GameBar]
+"UseNexusForGameBarEnabled"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowClockInNotificationCenter"=dword:00000001
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Start]
+"ShowRecentList"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_TrackDocs"=dword:00000000
+"Start_IrisRecommendations"=dword:00000000
+"Start_AccountNotifications"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Policies\Microsoft\Windows\CurrentVersion\AccountNotifications]
+"DisableAccountNotifications"=dword:00000001
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Input\Settings]
+"EnableAutocorrection"=dword:00000000
+"InsightsEnabled"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Policies\Microsoft\Control Panel\International]
+"TurnOffAutocorrectMisspelledWords"=dword:00000001
+"TurnOffHighlightMisspelledWords"=dword:00000001
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\CrossDeviceResume\Configuration]
+"IsResumeAllowed"=dword:00000000
+"IsOneDriveResumeAllowed"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"IsEnabled"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\CDP]
+"EnablePromotionalAppsForShare"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"MultiTaskingAltTabFilter"=dword:00000003
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Lighting]
+"AmbientLightingEnabled"=dword:00000000
+"ControlledByForegroundApp"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\UserProfileEngagement]
+"ScoobeSystemSettingEnabled"=dword:00000000
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers\CameraAlternate\ShowPicturesOnArrival]
+@="MSTakeNoAction"
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlersDefaultSelection\CameraAlternate\ShowPicturesOnArrival]
+@="MSTakeNoAction"
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers\StorageOnArrival]
+@="MSTakeNoAction"
+
+[HKEY_USERS\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlersDefaultSelection\StorageOnArrival]
+@="MSTakeNoAction"
+		</File>
+		<File path="C:\Windows\Setup\Scripts\Specialize.ps1">
+$scripts = @(
+	{
+		reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE" /v BypassNRO /t REG_DWORD /d 1 /f;
+	};
+	{
+		@(
+		  'C:\Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\OneDrive.lnk';
+		  'C:\Windows\System32\OneDriveSetup.exe';
+		  'C:\Windows\SysWOW64\OneDriveSetup.exe';
+		) | Where-Object -FilterScript { [System.IO.File]::Exists( $_ ); } | Remove-Item -Verbose -ErrorAction 'Continue';
+	};
+	{
+		net.exe accounts /maxpwage:UNLIMITED;
+	};
+	{
+		reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications" /v DisableNotifications /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\CI\Policy" /v VerifiedAndReputablePolicyState /t REG_DWORD /d 0 /f;
+	};
+	{
+		reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /v SmartScreenEnabled /t REG_SZ /d "Off" /f;
+		reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WTDS\Components" /v ServiceEnabled /t REG_DWORD /d 0 /f;
+		reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WTDS\Components" /v NotifyMalicious /t REG_DWORD /d 0 /f;
+		reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WTDS\Components" /v NotifyPasswordReuse /t REG_DWORD /d 0 /f;
+		reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WTDS\Components" /v NotifyUnsafeApp /t REG_DWORD /d 0 /f;
+		reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Systray" /v HideSystray /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v EnableLUA /t REG_DWORD /d 0 /f
+	};
+	{
+		reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\FileSystem" /v LongPathsEnabled /t REG_DWORD /d 1 /f
+	};
+	{
+		fsutil.exe behavior set disableLastAccess 1;
+	};
+	{
+		reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v HiberbootEnabled /t REG_DWORD /d 0 /f;
+	};
+	{
+		reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Dsh" /v AllowNewsAndInterests /t REG_DWORD /d 0 /f;
+	};
+	{
+		reg.exe add "HKLM\Software\Policies\Microsoft\Windows\CloudContent" /v "DisableWindowsConsumerFeatures" /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKU\.DEFAULT\Control Panel\Accessibility\StickyKeys" /v Flags /t REG_SZ /d 10 /f;
+	};
+	{
+		  reg.exe add "HKLM\System\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 0 /f;
+		  reg.exe add "HKLM\System\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 0 /f;
+		  reg.exe add "HKLM\System\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "EnabledBootId" /t REG_DWORD /d 0 /f;
+		  reg.exe add "HKLM\System\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "WasEnabledBy" /t REG_DWORD /d 0 /f;
+	};
+	{
+		reg.exe add "HKLM\System\CurrentControlSet\Control\Session Manager" /v "DisableWpbtExecution" /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKLM\Software\Microsoft\Windows\CurrentVersion\Device Metadata" /v "PreventDeviceMetadataFromNetwork" /t REG_DWORD /d 1 /f;
+		reg.exe add "HKLM\Software\Microsoft\Windows\CurrentVersion\Device Installer" /v "DisableCoInstallers" /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe import "C:\Windows\Setup\Scripts\unattend-01.reg";
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\unattend-02.ps1';
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\unattend-03.ps1';
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\unattend-04.ps1';
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\unattend-05.ps1';
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\unattend-06.ps1';
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\unattend-07.ps1';
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\unattend-08.ps1';
+	};
+	{
+		C:\Windows\Setup\Scripts\unattend-09.cmd;
+	};
+);
+
+&amp; {
+  [float] $complete = 0;
+  [float] $increment = 100 / $scripts.Count;
+  foreach( $script in $scripts ) {
+    Write-Progress -Id 0 -Activity 'Running scripts to customize your Windows installation. Do not close this window.' -PercentComplete $complete;
+    'Running command: {0}' -f $(
+      $script.ToString().Trim() -replace '\s+', ' '
+    );
+    $start = [datetime]::Now;
+    &amp; $script;
+    'Completed in {0:0} ms.' -f [datetime]::Now.Subtract( $start ).TotalMilliseconds;
+    "`r`n" * 3;
+    $complete += $increment;
+  }
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; "C:\Windows\Setup\Scripts\Specialize.log";
+		</File>
+		<File path="C:\Windows\Setup\Scripts\UserOnce.ps1">
+$scripts = @(
+	{
+		Set-WinHomeLocation -GeoId 19618;
+	};
+	{
+    		Set-WinAcceptLanguageFromLanguageListOptOut -OptOut $true;
+	};
+	{
+        	$Culture = [System.Globalization.CultureInfo]::GetCultureInfo('mk-MK')
+       		Set-Culture -CultureInfo $Culture
+    	};
+	{
+		Set-ItemProperty -LiteralPath 'Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced' -Name 'LaunchTo' -Type 'DWord' -Value 1;
+	};
+	{
+		Set-ItemProperty -LiteralPath 'Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Search' -Name 'SearchboxTaskbarMode' -Type 'DWord' -Value 1;
+	};
+	{
+		New-Item -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Force;
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{5399e694-6ce5-4d6c-8fce-1d8870fdcba0}' -Value 0 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{b4bfcc3a-db2c-424c-b029-7fe99a87c641}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{a8cdff1c-4878-43be-b5fd-f8091c1c60d0}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{374de290-123f-4565-9164-39c4925e467b}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{e88865ea-0e1c-4e20-9aa6-edcd0212c87c}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{f874310e-b6b7-47dc-bc84-b9e6b38f5903}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{1cf1260c-4dd0-4ebb-811f-33c572699fde}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{f02c1a0d-be21-4350-88b0-7367fc96ef3c}' -Value 0 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{3add1653-eb32-4cb0-bbd7-dfa0abb5acca}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{645ff040-5081-101b-9f08-00aa002f954e}' -Value 0 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{20d04fe0-3aea-1069-a2d8-08002b30309d}' -Value 0 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{59031a47-3f72-44a7-89c5-5595fe6b30ee}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu' -Name '{a0953c92-50dc-43bf-be83-3742fed03c9c}' -Value 1 -Type 'DWord';
+		New-Item -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Force;
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{5399e694-6ce5-4d6c-8fce-1d8870fdcba0}' -Value 0 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{b4bfcc3a-db2c-424c-b029-7fe99a87c641}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{a8cdff1c-4878-43be-b5fd-f8091c1c60d0}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{374de290-123f-4565-9164-39c4925e467b}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{e88865ea-0e1c-4e20-9aa6-edcd0212c87c}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{f874310e-b6b7-47dc-bc84-b9e6b38f5903}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{1cf1260c-4dd0-4ebb-811f-33c572699fde}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{f02c1a0d-be21-4350-88b0-7367fc96ef3c}' -Value 0 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{3add1653-eb32-4cb0-bbd7-dfa0abb5acca}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{645ff040-5081-101b-9f08-00aa002f954e}' -Value 0 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{20d04fe0-3aea-1069-a2d8-08002b30309d}' -Value 0 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{59031a47-3f72-44a7-89c5-5595fe6b30ee}' -Value 1 -Type 'DWord';
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel' -Name '{a0953c92-50dc-43bf-be83-3742fed03c9c}' -Value 1 -Type 'DWord';
+	};
+	{
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Start' -Name 'VisiblePlaces' -Value $( [convert]::FromBase64String('hghzUqpRQ0Kfeyd2WEZZ1A==') ) -Type 'Binary';
+	};
+	{
+		reg.exe import "C:\Windows\Setup\Scripts\unattend-0b.reg";
+	};
+	{
+		Get-Process -Name 'explorer' -ErrorAction 'SilentlyContinue' | Where-Object -FilterScript {
+			$_.SessionId -eq ( Get-Process -Id $PID ).SessionId;
+		} | Stop-Process -Force;
+	};
+);
+
+&amp; {
+  [float] $complete = 0;
+  [float] $increment = 100 / $scripts.Count;
+  foreach( $script in $scripts ) {
+    Write-Progress -Id 0 -Activity 'Running scripts to configure this user account. Do not close this window.' -PercentComplete $complete;
+    'Running command: {0}' -f $(
+      $script.ToString().Trim() -replace '\s+', ' '
+    );
+    $start = [datetime]::Now;
+    &amp; $script;
+    'Completed in {0:0} ms.' -f [datetime]::Now.Subtract( $start ).TotalMilliseconds;
+    "`r`n" * 3;
+    $complete += $increment;
+  }
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; "$env:TEMP\UserOnce.log";
+		</File>
+		<File path="C:\Windows\Setup\Scripts\DefaultUser.ps1">
+$scripts = @(
+	{
+		Remove-ItemProperty -LiteralPath 'Registry::HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Run' -Name 'OneDriveSetup' -Force -ErrorAction 'Continue';
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "HideFileExt" /t REG_DWORD /d 0 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "Hidden" /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Edge\SmartScreenEnabled" /ve /t REG_DWORD /d 0 /f;
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Edge\SmartScreenPuaEnabled" /ve /t REG_DWORD /d 0 /f;
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\AppHost" /v EnableWebContentEvaluation /t REG_DWORD /d 0 /f;
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\AppHost" /v PreventOverride /t REG_DWORD /d 0 /f;
+	};
+	{
+		$names = @(
+		  'ContentDeliveryAllowed';
+		  'FeatureManagementEnabled';
+		  'OEMPreInstalledAppsEnabled';
+		  'PreInstalledAppsEnabled';
+		  'PreInstalledAppsEverEnabled';
+		  'SilentInstalledAppsEnabled';
+		  'SoftLandingEnabled';
+		  'SubscribedContentEnabled';
+		  'SubscribedContent-310093Enabled';
+		  'SubscribedContent-338387Enabled';
+		  'SubscribedContent-338388Enabled';
+		  'SubscribedContent-338389Enabled';
+		  'SubscribedContent-338393Enabled';
+		  'SubscribedContent-353694Enabled';
+		  'SubscribedContent-353696Enabled';
+		  'SubscribedContent-353698Enabled';
+		  'SystemPaneSuggestionsEnabled';
+		);
+		
+		foreach( $name in $names ) {
+		  reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /v $name /t REG_DWORD /d 0 /f;
+		}
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v TaskbarAl /t REG_DWORD /d 0 /f;
+	};
+	{
+		$params = @{
+		  LiteralPath = 'Registry::HKU\DefaultUser\Control Panel\Mouse';
+		  Type = 'String';
+		  Value = 0;
+		  Force = $true;
+		};
+		Set-ItemProperty @params -Name 'MouseSpeed';
+		Set-ItemProperty @params -Name 'MouseThreshold1';
+		Set-ItemProperty @params -Name 'MouseThreshold2';
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Policies\Microsoft\Windows\Explorer" /v DisableSearchBoxSuggestions /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\TaskbarDeveloperSettings" /v TaskbarEndTask /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Control Panel\Accessibility\StickyKeys" /v Flags /t REG_SZ /d 10 /f;
+	};
+	{
+		reg.exe import "C:\Windows\Setup\Scripts\unattend-0c.reg";
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\RunOnce" /v "UnattendedSetup" /t REG_SZ /d "powershell.exe -WindowStyle \""Normal\"" -ExecutionPolicy \""Unrestricted\"" -NoProfile -File \""C:\Windows\Setup\Scripts\UserOnce.ps1\""" /f;
+	};
+);
+
+&amp; {
+  [float] $complete = 0;
+  [float] $increment = 100 / $scripts.Count;
+  foreach( $script in $scripts ) {
+    Write-Progress -Id 0 -Activity 'Running scripts to modify the default user&#x2019;&#x2019;s registry hive. Do not close this window.' -PercentComplete $complete;
+    'Running command: {0}' -f $(
+      $script.ToString().Trim() -replace '\s+', ' '
+    );
+    $start = [datetime]::Now;
+    &amp; $script;
+    'Completed in {0:0} ms.' -f [datetime]::Now.Subtract( $start ).TotalMilliseconds;
+    "`r`n" * 3;
+    $complete += $increment;
+  }
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; "C:\Windows\Setup\Scripts\DefaultUser.log";
+		</File>
+		<File path="C:\Windows\Setup\Scripts\FirstLogon.ps1">
+$scripts = @(
+	{
+		Set-ItemProperty -LiteralPath 'Registry::HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon' -Name 'AutoLogonCount' -Type 'DWord' -Force -Value 0;
+	};
+	{
+		Disable-ComputerRestore -Drive 'C:\';
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\unattend-0a.ps1';
+	};
+	{
+		Remove-Item -LiteralPath @(
+		  'C:\Windows\Panther\unattend.xml';
+		  'C:\Windows\Panther\unattend-original.xml';
+		  'C:\Windows\Setup\Scripts\Wifi.xml';
+		) -Force -ErrorAction 'SilentlyContinue' -Verbose;
+	};
+);
+
+&amp; {
+  [float] $complete = 0;
+  [float] $increment = 100 / $scripts.Count;
+  foreach( $script in $scripts ) {
+    Write-Progress -Id 0 -Activity 'Running scripts to finalize your Windows installation. Do not close this window.' -PercentComplete $complete;
+    'Running command: {0}' -f $(
+      $script.ToString().Trim() -replace '\s+', ' '
+    );
+    $start = [datetime]::Now;
+    &amp; $script;
+    'Completed in {0:0} ms.' -f [datetime]::Now.Subtract( $start ).TotalMilliseconds;
+    "`r`n" * 3;
+    $complete += $increment;
+  }
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; "C:\Windows\Setup\Scripts\FirstLogon.log";
+		</File>
+	</Extensions>
+</unattend>
