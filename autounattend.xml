@@ -148,7 +148,18 @@
 		</component>
 		<component name="Microsoft-Windows-RemoteAssistance-Exe" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
         		<fAllowToGetHelp>false</fAllowToGetHelp>
-    		</component>
+    	</component>
+		<component name="Microsoft-Windows-DNS-Client" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+			<Interfaces>
+				<Interface wcm:action="add">
+				<Identifier>Ethernet</Identifier>
+				<DNSServerSearchOrder>
+					<IpAddress wcm:action="add" wcm:keyValue="1">9.9.9.9</IpAddress>
+					<IpAddress wcm:action="add" wcm:keyValue="2">149.112.112.112</IpAddress>
+				</DNSServerSearchOrder>
+				</Interface>
+			</Interfaces>
+		</component>
 		<component name="Microsoft-Windows-Deployment" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
 			<RunSynchronous>
 				<RunSynchronousCommand wcm:action="add">
